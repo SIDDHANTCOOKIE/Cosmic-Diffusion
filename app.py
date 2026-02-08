@@ -25,7 +25,11 @@ def load_model():
     
     return model
 
-model = load_model()
+if __name__ == "__main__":
+    try:
+        model = load_model()
+    except Exception as e:
+        st.error(f"Failed to initialize model: {e}")
 
 col1, col2 = st.columns(2)
 
