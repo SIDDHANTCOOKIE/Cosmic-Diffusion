@@ -18,9 +18,8 @@ build/
 *.h5
 *.ckpt
 
-# Data
+# Data (but NOT requirements.txt)
 *.csv
-*.txt
 data/
 
 # IDE
